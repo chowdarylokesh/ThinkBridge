@@ -1,0 +1,37 @@
+<div>
+    <p class="heading">Add Product</p>
+</div>
+<mat-card>
+    <form class="product-form" [formGroup]="addProductForm">
+        <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="left" fxLayoutGap="10px" fxLayoutGap.xs="">
+            <div class="item item1" fxFlex="30%">
+                <mat-form-field class="form-group example-full-width">
+                    <mat-label>Name</mat-label>
+                    <input matInput class="form-control" formControlName="name">
+                </mat-form-field>
+            </div>
+            <div class="item item2" fxFlex="30%">
+                <mat-form-field class="form-group example-full-width">
+                    <mat-label>Description</mat-label>
+                    <input matInput class="form-control" formControlName="description">
+                </mat-form-field>
+            </div>
+            <div class="item item3" fxFlex="15%">
+                <mat-form-field class="form-group example-full-width">
+                    <mat-label>Price</mat-label>
+                    <input matInput class="form-control" type="number" formControlName="price">
+                </mat-form-field>
+            </div>
+            <div class="item item4" fxFlex="15%">
+                <mat-form-field class="form-group example-full-width">
+                    <mat-label>Rating</mat-label>
+                    <input matInput class="form-control" type="number" formControlName="rating">
+                </mat-form-field>
+            </div>
+            <div class="item item5" fxFlex="10%">
+                <button mat-button mat-raised-button color="primary" (click)="submitForm()"
+                    [disabled]="!this.addProductForm.valid" type="reset">Add</button>
+            </div>
+        </div>
+    </form>
+</mat-card>

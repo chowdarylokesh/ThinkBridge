@@ -1,0 +1,11 @@
+
+table {
+    width: 100%;
+  }
+  th {
+      font-size: large;
+  }
+
+  th.mat-sort-header-sorted {
+    color: black;
+  }

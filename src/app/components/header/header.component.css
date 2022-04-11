@@ -1,0 +1,10 @@
+.header {
+    overflow: hidden;
+    background-color: #0e0349;
+    padding: 20px 10px;
+  }
+  .header-text {
+      color: white;
+      font-size: 30px;
+      text-align: center;
+  }
